@@ -307,7 +307,7 @@
     data () {
       return {
         loading: false,
-        active: 3,
+        active: 0,
         form1: {
           input1: {
             username: '',
