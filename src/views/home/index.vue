@@ -15,7 +15,7 @@
           <el-menu-item index="/home/activate">运行配置</el-menu-item>
           <el-menu-item index="/home/simulate">工厂InF信道模拟</el-menu-item>
           <el-menu-item index="/home/perspective">时延全流程透视</el-menu-item>
-          <el-menu-item index="/home/optimize">URRLLC空就传输配置优化</el-menu-item>
+          <el-menu-item index="/home/optimize">URLLC空口传输配置优化</el-menu-item>
           <el-dropdown-menu slot="dropdown">
             <el-dropdown-item>查看</el-dropdown-item>
             <el-dropdown-item>新增</el-dropdown-item>

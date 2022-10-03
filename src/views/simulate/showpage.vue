@@ -6,9 +6,8 @@
       <el-button type="success" v-show="state==2" @click="showdetail">仿真回放</el-button>
     </div>
     <div class="page" id="page2" v-show="state==3">
-      <el-button type="primary" @click="state=0" style="margin-bottom: 20px">结束仿真</el-button>
       <el-collapse v-model="activeName" accordion>
-        <el-collapse-item title="gNB和UE星座图" name="1">
+        <el-collapse-item title="AWGN星座图" name="1">
           <div class="imgBox">
             <div class="imgStarmap">
               <img src="../../assets/imgs/gNB.png" alt="">
@@ -19,6 +18,12 @@
           </div>
         </el-collapse-item>
       </el-collapse>
+      <br>
+      <div class="footer">
+        <el-button type="primary" @click="alive=false" style="margin-bottom: 20px" v-show="alive">结束仿真</el-button>
+        <el-button type="primary" @click="state=0" style="margin-bottom: 20px" v-show="!alive">重新仿真</el-button>
+        <el-button type="primary" @click="$router.push('settings')" style="margin-bottom: 20px" v-show="!alive">编辑参数</el-button>
+      </div>
     </div>
   </div>
 </template>
@@ -31,6 +36,7 @@
         loading: false,
         state: 0,
         activeName: '1',
+        alive: true,
       }
     },
     mounted() {
@@ -84,5 +90,14 @@
   .imgStarmap img {
     width: 100%;
     height: 100%;
+  }
+  
+  #page2 {
+    position: relative;
+  }
+  #page2 .footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
   }
 </style>
