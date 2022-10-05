@@ -159,7 +159,7 @@
           series: [{
             type: 'graph',
             symbol: 'rect',
-            symbolSize: [150,30],
+            symbolSize: [200,30],
             roam: false,
             label: {
               show: true

@@ -57,19 +57,19 @@
         <el-row :gutter="24">
           <el-col :span="8">
             <el-form ref="form" :model="form" size="small" label-width="100px">
-              <el-form-item label="nb_tx" v-show="form.method==1">
+              <el-form-item label="nb_tx" label-position="left" label-width="150px" v-show="form.method==1">
                 <el-input :disabled='form.selectFile==""' v-model="form.input.nb_tx" @change="formComplete=false"></el-input>
               </el-form-item>
-              <el-form-item label="nb_rx" v-show="form.method==1">
+              <el-form-item label="nb_rx" label-position="left" label-width="150px" v-show="form.method==1">
                 <el-input :disabled='form.selectFile==""' v-model="form.input.nb_rx" @change="formComplete=false"></el-input>
               </el-form-item>
-              <el-form-item label="nb_taps" v-show="form.method==1">
+              <el-form-item label="nb_taps" label-position="left" label-width="150px" v-show="form.method==1">
                 <el-input :disabled='form.selectFile==""' v-model="form.input.nb_taps" @change="formComplete=false"></el-input>
               </el-form-item>
-              <el-form-item label="channel_bandwidth" v-show="form.method==1">
+              <el-form-item label="channel_bandwidth" label-position="left" label-width="150px" v-show="form.method==1">
                 <el-input :disabled='form.selectFile==""' v-model="form.input.channel_bandwidth" @change="formComplete=false"></el-input>
               </el-form-item>
-              <el-form-item label="sampling_rate" v-show="form.method==1">
+              <el-form-item label="sampling_rate" label-position="left" label-width="150px" v-show="form.method==1">
                 <el-input :disabled='form.selectFile==""' v-model="form.input.sampling_rate" @change="formComplete=false"></el-input>
               </el-form-item>
             </el-form>

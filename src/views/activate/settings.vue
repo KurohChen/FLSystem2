@@ -124,8 +124,8 @@
             <el-form ref="form3_1" :model="form3" size="small" label-width="100px">
               <el-form-item label="配置方式" prop="method">
                 <el-radio-group v-model="form3.method">
-                  <el-radio label="1">选择已有文件</el-radio>
-                  <el-radio label="2">自行设置文件</el-radio>
+                  <el-radio label="1">选择已有信道模型</el-radio>
+                  <el-radio label="2">自行设置信道模型</el-radio>
                 </el-radio-group>
               </el-form-item>
             </el-form>
@@ -169,19 +169,19 @@
         <el-row :gutter="24">
           <el-col :span="8">
             <el-form ref="form" :model="form3" size="small" label-width="100px">
-              <el-form-item label="nb_tx" v-show="form3.method==1&&form3.selectFile!=''">
+              <el-form-item label="nb_tx" label-position="left" label-width="150px" v-show="form3.method==1&&form3.selectFile!=''">
                 <el-input :disabled='form3.selectFile==""' v-model="form3.input.nb_tx"></el-input>
               </el-form-item>
-              <el-form-item label="nb_rx" v-show="form3.method==1&&form3.selectFile!=''">
+              <el-form-item label="nb_rx" label-position="left" label-width="150px" v-show="form3.method==1&&form3.selectFile!=''">
                 <el-input :disabled='form3.selectFile==""' v-model="form3.input.nb_rx"></el-input>
               </el-form-item>
-              <el-form-item label="nb_taps" v-show="form3.method==1&&form3.selectFile!=''">
+              <el-form-item label="nb_taps" label-position="left" label-width="150px" v-show="form3.method==1&&form3.selectFile!=''">
                 <el-input :disabled='form3.selectFile==""' v-model="form3.input.nb_taps"></el-input>
               </el-form-item>
-              <el-form-item label="channel_bandwidth" v-show="form3.method==1&&form3.selectFile!=''">
+              <el-form-item label="channel_bandwidth" label-position="left" label-width="150px" v-show="form3.method==1&&form3.selectFile!=''">
                 <el-input :disabled='form3.selectFile==""' v-model="form3.input.channel_bandwidth"></el-input>
               </el-form-item>
-              <el-form-item label="sampling_rate" v-show="form3.method==1&&form3.selectFile!=''">
+              <el-form-item label="sampling_rate" label-position="left" label-width="150px" v-show="form3.method==1&&form3.selectFile!=''">
                 <el-input :disabled='form3.selectFile==""' v-model="form3.input.sampling_rate"></el-input>
               </el-form-item>
             </el-form>

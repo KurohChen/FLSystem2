@@ -7,7 +7,17 @@
     </div>
     <div class="page" id="page2" v-show="state==3">
       <el-collapse v-model="activeName" accordion>
-        <el-collapse-item title="AWGN星座图" name="1">
+        <el-collapse-item title="GNB" name="1">
+          <div class="imgBox">
+            <div class="imgStarmap">
+              <img src="../../assets/imgs/gNB.png" alt="">
+            </div>
+            <div class="imgStarmap">
+              <img src="../../assets/imgs/UE.png" alt="">
+            </div>
+          </div>
+        </el-collapse-item>
+        <el-collapse-item title="UE" name="2">
           <div class="imgBox">
             <div class="imgStarmap">
               <img src="../../assets/imgs/gNB.png" alt="">
